@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="half-background" style="background-image: url('rolls_royce.webp'); background-size: cover; background-repeat: no-repeat;">
+    <h1>Welcome to the Car Rental System</h1>
+    <div id="rental-form">
+        <h2>Rent a Car</h2>
+        <form id="rentCarForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="car">Car:</label>
+            <select id="car" name="car" required>
+                <!-- Car options populated via JavaScript -->
+            </select><br>
+
+            <label for="location">Location:</label>
+            <select id="location" name="location" required>
+                <!-- Location options populated via JavaScript -->
+            </select><br>
+
+            <label for="rental_date">Rental Date:</label>
+            <input type="date" id="rental_date" name="rental_date" required><br>
+
+            <label for="return_date">Return Date:</label>
+            <input type="date" id="return_date" name="return_date" required><br>
+
+            <button type="submit">Rent Car</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
